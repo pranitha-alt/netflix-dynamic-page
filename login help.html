@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login help</title>
+    <style>
+        body{
+            background-image: url('https://wallpapers.com/images/hd/netflix-the-crown-season-1-se4q9fn6h7on2439.jpg');
+            background-size:1500px 750px;
+        }
+        img{
+            height:180px;
+            width:180px;
+            position:relative;
+            top:-50px;
+            left:30px;
+            word-spacing:10px;
+        }
+        .anchor{
+            color:rgb(211, 25, 25);;
+            text-decoration:none;
+            position:relative;
+            left:1220px;
+            top:-120px;
+            font-size:25px;
+        }
+        .anchor:hover{
+            text-decoration:underline;
+        }
+        .container{
+            border:1px solid black;
+            height:520px;
+            width:500px;
+            position:relative;
+            left:500px;
+            top:-90px;
+            background-color:white;
+        }
+        .pass{
+            font-size:30px;
+            font-weight:bolder;
+            position:relative;
+            left:35px;
+            top:40px;
+            line-height:-8px;
+        }
+        .reset{
+            position:relative;
+            left:35px;
+            top:65px;
+            font-size:17px;
+        }
+        .button{
+            position:relative;
+            left:60px;
+            top:80px;
+            height:25px;
+            width:25px;
+        }
+        #button{
+            position:relative;
+            left:65px;
+            top:75px;
+            font-size:18px;
+        }
+        .button1{
+            position:relative;
+            left:60px;
+            top:85px;
+            height:25px;
+            width:25px;
+        }
+        #button1{
+            position:relative;
+            left:60px;
+            top:78px;
+            height:25px;
+            width:25px;
+            font-size:18px;
+        }
+        .long{
+            position:relative;
+            left:35px;
+            top:105px;
+            font-size:18px;
+        }
+        .example{
+            border:1px solid black;
+            position:relative;
+            bottom:-120px;
+            left:35px;
+            height:40px;
+            width:380px;
+            background-color:white;
+            color:black;
+        }
+        .btn{
+            border:1px solid skyblue;
+            position:relative;
+            bottom:-150px;
+            left:35px;
+            height:50px;
+            width:385px;
+            background-color:rgb(17, 185, 251);
+            color:white;
+            font-size:20px;
+        }
+        .page{
+            color:rgba(255, 255, 255, 0.464);
+            position:relative;
+            left:500px;
+            top:-70px;
+            font-size:17px;
+        }
+        .learn{
+            color:rgba(255, 255, 255, 0.464);
+            position:relative;
+            left:570px;
+            top:-90px;
+            font-size:17px;
+            text-decoration:underline;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://images.ctfassets.net/y2ske730sjqp/6bhPChRFLRxc17sR8jgKbe/6fa1c6e6f37acdc97ff635cf16ba6fb3/Logos-Readability-Netflix-logo.png"/>
+        <a href="C:/Users/admin/OneDrive/Desktop/netflix%20login.html" class="anchor">Sign In</a>
+    </nav>
+    <div class="container">
+        <div class="pass">Update password, email</br>or phone</div>
+        <div class="reset">How would you like to reset your password?</div>
+        <form>
+            <input type="radio" class="button">
+            <label id="button">Email</label></br>
+            <input type="radio" class="button1" onclick="change()">
+            <label id="button1">Text Message (SMS)</label>
+        </form>
+        <div class="long">We will send you an email with instructions on how to</br>reset your password.</div>
+        <input type="text" class="example" placeholder="name@example.com">
+        <button class="btn">Email Me</button>
+    </div>
+    <div class="page">This page is protected by Google reCAPTCHA to ensure you're</br>not a bot.</div>
+    <div class="learn">Learn more.</div>
+
+
+
+    <script>
+        let text = document.getElementsByClassName("learn")[0];
+        text.addEventListener("click", () => {
+            text.innerHTML = "This is a DEMO PAGE made by VASANTHA PRANITHA using HTML,CSS,JS.";
+            text.style.position="relative";
+            text.style.top="-50px";
+            text.style.position="relative";
+            text.style.left ="500px";
+            text.style.textDecoration = "none";
+        })
+        function change(){
+            let long = document.getElementsByClassName("long")[0];
+            long.innerHTML = "We will text you a verification code to reset your password. Message and data rates may apply.";
+            let button = document.getElementsByClassName("btn")[0];
+            button.innerHTML= "Text Me";         
+        }
+    </script>
+</body>
+</html>
